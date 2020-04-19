@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab2_Bai12</title>
+    <style>
+        th {
+            background-color: #016634;
+            text-align: left;
+            color: #9BC493;
+        }
+        body {
+            transform: scale(1.8);
+            transform-origin: 0 0;
+        }
+        textarea {
+            width: 500px;
+            height: 50px;
+            border: #88C362 1px solid;
+        }
+        input[type=text] {
+            border: #88C362 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <table>
+            <tr>
+                <td colspan="2" width="800"><h3 style="text-align:center; color: #0F831B; text-transform:uppercase">Đăng kí thông tin việc làm</h3></td>
+            </tr>
+            <tr>
+                <th colspan="2">Thông tin cá nhân</th>
+            </tr>
+            <tr>
+                <td align="right">Họ và tên: </td>
+                <td><input type="text" name="txtHoVaTen" size="35" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Ngày tháng năm sinh: </td>
+                <td><input type="text" name="txtNgaySinh" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Giới tính: </td>
+                <td>
+                    <select>
+                        <option>Nam</option>
+                        <option>Nữ</option>
+                        <option>Khác</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Tình trạng hôn nhân: </td>
+                <td>
+                    <select>
+                        <option>Độc thân</option>
+                        <option>Đã kết hôn</option>
+                        <option>Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                 <th colspan="2">Thông tin liên lạc</th>
+            </tr>
+            <tr>
+            <tr>
+                <td align="right">Địa chỉ: </td>
+                <td><input type="text" name="txtDiaChi" size="50" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Tỉnh/Thành Phố:  </td>
+                <td><input type="text" name="txtTinh_ThanhPho" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Số điện thoại: </td>
+                <td><input type="text" name="txtSoDienThoai" /></td>
+            </tr>
+            <tr>
+                <td align="right">Số điện thoại di động: </td>
+                <td><input type="text" name="txtSoDiDong" /></td>
+            </tr>
+            <tr>
+                <td align="right">Email: </td>
+                <td><input type="text" name="txtEmail" size="35" required /></td>
+            </tr>
+            <tr>
+                 <th colspan="2">Trình độ học vấn</th>
+            </tr>
+            <tr>
+                <td align="right">Trình độ học vấn: </td>
+                <td>
+                    <select required>
+                        <option>Chọn</option>
+                        <option>Cử Nhân</option>
+                        <option>Tiến Sĩ</option>
+                        <opttion>Kỹ Sư</opttion>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="right">Thông tin về học vấn: </td>
+                <td><textarea required></textarea></td>
+            </tr>
+
+            <tr>
+                <td valign="top" align="right">Ngoại ngữ: </td>
+                <td><textarea></textarea></td>
+            </tr>
+
+            <tr>
+                <td valign="top" align="right">Kỹ năng: </td>
+                <td><textarea  required></textarea></td>
+            </tr>
+            <tr>
+                 <th colspan="2">Kinh nghiệm làm việc</th>
+            </tr>
+            <tr>
+                <td align="right">Số năm kinh nghiệm: </td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                 <td align="right" valign="top">Kinh nghiệm làm việc: </td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                 <th colspan="2">Mong muốn của bản thân</th>
+            </tr>
+            <tr>
+                <td align="right">Việc làm mong muốn: </td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">Mức lương thoả thuận: </td>
+                <td style="color: #517A6B;"><input type="text"/> VNĐ</td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="Gửi hồ sơ"/>
+                    <input type="reset" value="Xoá form"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

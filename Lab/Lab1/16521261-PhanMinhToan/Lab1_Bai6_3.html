@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab1_Bai6_3</title>
+    <style>
+        body {
+            font-size: 26px;
+            font-family: Corbel;
+            opacity: 0.7;
+        }
+
+        .row {
+            
+            display: flex;
+        }
+
+        .column1 {
+            float: left;
+            padding: 20px;
+            border: 2px solid black;
+            padding-left: 50px;
+        }
+
+        .column2 {
+            float: left;
+            text-align: center;
+            background-color: rgb(192,192,192);
+            border: 2px solid black;
+            padding: 0px 20px 0px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top:20px;
+        }
+
+        p:first-letter {
+            color: blue;
+        }
+
+        .version {
+            text-align: center;
+            color: red;
+        }
+        header {
+            border: 2px solid black;
+            padding-bottom:40px;
+            background-color: rgb(238,238,238);
+        }
+     </style>
+</head>
+<body>
+    <header>Header Content Here</header>
+    <div class="row">
+        <div class="column1">
+            <h2>Two Column Flexible With Header</h2>
+            <div class="version">Ver 2.3</div>
+            <p>
+                This is the same as the two Column Flexible but with the addition of a header
+                div for top navigation or banner.
+            </p>
+            <p>
+                The left column uses float left and has percentage widths allowing both columns to <q>flow</q>
+                as the browser window changes shape.
+            </p>
+            <p>This template has been tested in:</p>
+            <ul>
+                <li>Mozilla 1.5b & FireFox 0.8</li>
+                <li>Internet Explorer 6</li>
+                <li>Nestscape 7.1</li>
+                <li>Opera 7.11</li>
+            </ul>
+            <p>change in this version:</p>
+            <ol>
+                <li>Define zero padding for the body to fix a problem in Opera</li>
+            </ol>
+        </div>
+        <div class="column2">
+            <h4>Right column</h4>
+            <p>The right column can be used for navigation links, search box etc.</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <a href="#">view more templates.</a>
+        </div>
+    </div>
+
+</body>
+</html>

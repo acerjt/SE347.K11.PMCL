@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab1_Bai6_1</title>
+    <style>
+        body {
+            font-size: 26px;
+            font-family: Corbel;
+            opacity:0.7;
+        }
+        .row {
+           width:85%;
+           display:flex;
+        }
+        .column1 {
+            width:60%;
+            float:left;
+            padding: 20px;
+        }
+        .column2 {
+            width: 35%;
+            float: left;
+            text-align:center;  
+            background-color: rgb(192,192,192);
+           
+        }
+        h3 {
+            text-align:center;
+        }
+        p:first-letter {
+            color:blue;
+        }
+       .version {
+            text-align: center;
+            color: red;
+        }
+        #logo {
+            border: 1px solid black;
+            background-color:white;
+            margin: 20px 80px 20px 80px;
+            font-size:50px;
+            padding: 10px 10px 10px 10px;
+            text-shadow: 6px 6px 1px rgb(150,150,150);  
+        }
+        .column1 {
+            border: 1px solid black;
+        }
+        .column2 {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column1">
+            <h3>Two Column Flexible</h3>
+            <div class="version">Ver 2.3</div>
+            <p>This is a very easy page layout which you have probaly seen on sites
+            such as ALA (A List Apart). Each column is created  with simply two div tags.</p>
+            <p>The left column uses float left and has percentage widths allowing both columns to <q>flow</q>
+            as the browser window changes shape.</p>
+            <p>This template has been tested in:</p>
+            <ul>
+                <li>Mozilla 1.5b & FireFox 0.8</li>
+                <li>Internet Explorer 6</li>
+                <li>Nestscape 7.1</li>
+                <li>Opera 7.11</li>
+            </ul>
+            <p>change in this version:</p>
+            <ol>
+                <li>Define zero padding for the body to fix a problem in Opera</li>
+            </ol>
+        </div>
+        <div class="column2">
+            <div id="logo">Your logo</div>
+            <p>The right column can be used for navigation links, search box etc.</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <a href="#">View more templates.</a>
+        </div>
+    </div>
+
+</body>
+</html>

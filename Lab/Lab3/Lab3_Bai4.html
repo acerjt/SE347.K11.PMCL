@@ -1,0 +1,44 @@
+<!DOCTYPE
+    html>
+<html
+    lang="vi">
+
+<head>
+    <meta
+        charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <title>
+        Lab3_Bai4
+    </title>
+</head>
+
+<body>
+    <script>
+        var yearBirth = 0;
+        var currentYear = new Date().getFullYear();
+        function validYearOfBirth(yearBirth) {
+            if (yearBirth < 0) {
+                alert("Năm sinh không hợp lệ!")
+                return false;
+            }
+            else if (yearBirth > currentYear) {
+                alert("Năm sinh đã lớn hơn năm hiện tại");
+                return false;
+            }
+            else return true;
+        }
+        do {
+            yearBirth = prompt("Nhập năm sinh", "");
+        } while (!validYearOfBirth(yearBirth));
+
+        var age = currentYear - yearBirth;
+        alert("Số tuổi của bạn là: " + age);
+    </script>
+</body>
+
+</html>

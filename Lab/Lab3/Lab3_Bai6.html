@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab3_Bai6</title>
+    <script language="JavaScript">
+        function mailsome1() {
+            who = prompt("Enter recipient's email address: ", "antispammer@eathling.net");
+            what = prompt("Enter the subject: ", "none");
+            if (confirm("Are you sure you want to email " + who + " with the subject of " + what + "?") == true) {
+                parent.location.href = 'mailto:' + who + '?subject=' + what + '';
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <a href="javascript:mailsome1()">E-Mail Someone!</a>
+        <form>
+            <input type="button" value="E-Mail Someone!" onclick="mailsome1()">
+
+        </form>
+
+
+    </center>
+</body>
+
+</html>
